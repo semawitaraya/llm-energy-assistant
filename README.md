@@ -65,21 +65,12 @@ streamlit run app.py
 ```
 llm-energy-assistant/
 ├── src/
-│   ├── config.py
-│   ├── document_loader.py
-│   ├── rag_pipeline.py
-│   └── __init__.py
-├── data/
-│   └── vectorstore/
-├── tests/
-│   └── test_pipeline.py
-├── app.py
-├── ingest.py
-├── requirements.txt
-├── .env.example
-├── .gitignore
-└── README.md
-```
-
+│   ├── config.py            # centralised settings
+│   ├── document_loader.py   # PDF loading and chunking
+│   └── rag_pipeline.py      # embeddings, FAISS, LLM chain
+├── data/                    # drop PDFs here
+├── app.py                   # Streamlit frontend
+├── ingest.py                # builds the FAISS index
+└── requirements.txt
 ## License
 MIT
