@@ -71,5 +71,6 @@ llm-energy-assistant/
 ├── app.py                   # Streamlit frontend
 ├── ingest.py                # builds the FAISS index
 └── requirements.txt
+
 ## License
 MIT
